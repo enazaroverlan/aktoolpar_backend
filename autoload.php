@@ -25,8 +25,12 @@ require_once(PROJECT_PATH.'/Database/Database.php');
 require_once(PROJECT_PATH.'/Lib/Routing.php');
 require_once(PROJECT_PATH.'/Lib/ErrorHandler.php');
 require_once(PROJECT_PATH.'/Lib/View.php');
+require_once(PROJECT_PATH.'/Lib/Security.php');
+require_once(PROJECT_PATH.'/Lib/FileLoader.php');
 
+FileLoader::loadClasses('Service');
 
 $rout = Routing::getInstance();
+
 
 echo $rout->proccessRoute();

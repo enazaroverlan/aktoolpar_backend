@@ -105,6 +105,7 @@ class Routing {
                     case 'built': return "Построенные объекты";
                     case 'building': return "Строящиеся объекты";
                     case 'projected': return "Проектирумые объекты";
+                    case 'build': return "Построенный объект";
                 }
                 break;
             case 'services':
@@ -145,12 +146,10 @@ class Routing {
     }
 
     public function GetLocation() {
-        switch($this->controller) {
-            case 'index': return "main";
-            case 'about': return "about";
-            case 'objects': return "objects";
-            case 'services': return "services";
-            case 'contacts': return "contacts";
-        }
+        return $this->controller;
+    }
+
+    public function GetAction() {
+        return $this->action;
     }
 }

@@ -313,12 +313,14 @@ body {
     font-size: 36px;
     color: black;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .object_location {
     font-family: HarSansPto-Regular, sans-serif;
     font-size: 18px;
     margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 .object_content {
@@ -736,10 +738,30 @@ body {
     margin-right: 6px;
 }
 
+.margin-right-25 {
+    margin-right: 25px;
+}
+
+.margin-bottom-25 {
+    margin-bottom: 25px;
+}
+
+
 /*============================================== End Margin ===================================*/
 
 .title_center_text {
     width: 839px;
+    height: 130px;
+    text-align: center;
+    font-family: "HarSansPto-Black", sans-serif;
+    font-size: 24px;
+    margin: 0 auto;
+    /*border: 1px solid #204d74;*/
+    padding-top: 50px;
+}
+
+.title_center_text_2 {
+    width: 1030px;
     height: 130px;
     text-align: center;
     font-family: "HarSansPto-Black", sans-serif;
@@ -798,3 +820,110 @@ body {
     background: url("/Toolpar/Public/IMAGES/certificates_shadow.png");
 }
 
+.border-bottom-1 {
+    border-bottom: 1px solid #d8dadb;
+}
+
+.object_body {
+    width: 1030px;
+    padding-top: 45px;
+    margin: 0 auto;
+}
+
+.one_object {
+    width: 500px;
+    height: 300px;
+    /*border: 1px solid #102a83;*/
+    display: inline-block;
+}
+
+.one_object_hover {
+    opacity: 0;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background: rgba(51,58,86, 0.9);
+    text-align: center;
+    font-size: 18px;
+    padding-top: 128px;
+    cursor: pointer;
+
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.one_object_hover span {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "HarSansPto-Black", sans-serif;
+    padding: 20px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.one_object_hover:Hover {
+    opacity: 1;
+
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.one_object_active {
+    opacity: 1;
+}
+
+.contacts_container {
+    width: 1006px;
+    height: 205px;
+    margin: 0 auto;
+    padding-top: 53px;
+    /*border: 1px solid #222222;*/
+    position: relative;
+}
+
+.contacts_block_1 {
+    width: 386px;
+    height: 152px;
+    /*border: 1px solid #102a83;*/
+    position: absolute;
+    left: 0;
+}
+
+.contacts_block_2 {
+    width: 362px;
+    height: 152px;
+    /*border: 1px solid #102a83;*/
+    position: absolute;
+    right: 0;
+}
+
+.toolpar_contacts_title {
+    font-family: HarSansPto-Bold, sans-serif;
+    font-size: 18px;
+    margin-bottom: 33px;
+}
+
+.contacts_group {
+    position: relative;
+}
+
+.contacts_key {
+    width: 102px;
+    margin-left: 0;
+    font-family: HarSansPto-SemiBold, sans-serif;
+    font-size: 16px;
+    float: left;
+}
+
+.contacts_value {
+    width: 284px;
+    margin-left: auto;
+    font-family: HarSansPto-Regular, sans-serif;
+    font-size: 16px;
+}

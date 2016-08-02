@@ -13,6 +13,9 @@ class Database {
         if(self::$con != null) {
             return self::$con;
         }
-        return self::$con = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+        self::$con = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+        mysqli_set_charset(self::$con, 'UTF8');
+        return self::$con;
     }
+
 }

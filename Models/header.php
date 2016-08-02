@@ -33,7 +33,7 @@ $routing = Routing::getInstance();
         <div class="nav_menu">
             <ul class="nav_menu_ul">
                 <a href="<?=URL_PREFIX.'/'?>" class="toolpar_links">
-                    <li class="nav_menu_li <?php if($routing->GetLocation() == 'main'): ?>nav_menu_active<?php endif; ?>">ГЛАВНАЯ</li>
+                    <li class="nav_menu_li <?php if($routing->GetLocation() == 'index'): ?>nav_menu_active<?php endif; ?>">ГЛАВНАЯ</li>
                 </a>
                 <a href="<?=URL_PREFIX.'/about'?>" class="toolpar_links">
                     <li class="nav_menu_li <?php if($routing->GetLocation() == 'about'): ?>nav_menu_active<?php endif; ?>">О НАС</li>
